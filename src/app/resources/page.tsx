@@ -14,7 +14,7 @@ const SITE = 'https://eaa-navigator.com';
 const PAGE_URL = `${SITE}/resources`;
 
 export const metadata: Metadata = {
-  title: 'Accessibility Resources, Tools & Templates | EAA Navigator',
+  title: 'Accessibility Resources, Tools & Templates',
   description:
     'Free web-accessibility resources: a WCAG 2.2 AA checklist, a VPAT template, plain-English guides, a glossary, the newsletter, plus our audit, remediation and VPAT services.',
   alternates: { canonical: '/resources' },

@@ -1,0 +1,27 @@
+# EAA Navigator
+
+> Plain-English guidance, free tools and templates for web accessibility compliance — WCAG 2.2, the European Accessibility Act (EAA, Directive (EU) 2019/882) and the US ADA — for any team that has to make a website or product accessible.
+
+EAA Navigator is an independent, free resource hub. It explains the standards and the law in plain English and provides a free colour-contrast checker and downloadable checklists. Everything is guidance to help you understand web accessibility, not legal advice. Published by Nukipa Labs GmbH.
+
+## Core pages
+
+- [What is web accessibility?](https://eaa-navigator.com/accessibility): The plain-English pillar — WCAG, the EAA and the ADA, who must comply, and how to get there.
+- [WCAG explained](https://eaa-navigator.com/wcag): WCAG 2.1 and 2.2, conformance levels A/AA/AAA, the four POUR principles, and the 55 Level AA criteria.
+- [European Accessibility Act (EAA)](https://eaa-navigator.com/eaa): Directive (EU) 2019/882 — dates, covered products and services, exemptions and conformance via EN 301 549.
+- [ADA & Section 508 (US)](https://eaa-navigator.com/ada): How US law treats web accessibility, the DOJ Title II rule (WCAG 2.1 AA) and Section 508.
+- [Compliance deadlines](https://eaa-navigator.com/deadlines): A living timeline — the EAA, the EU Web Accessibility Directive and the US DOJ Title II dates.
+- [Accessibility glossary](https://eaa-navigator.com/glossary): WCAG, EN 301 549, VPAT, ACR, POUR and other terms in plain English.
+
+## Tools & resources
+
+- [Colour contrast checker](https://eaa-navigator.com/contrast-checker): Test any text and background against the WCAG AA and AAA thresholds, in your browser.
+- [WCAG 2.2 AA checklist (PDF)](https://eaa-navigator.com/wcag-checklist): All 55 Level A and AA success criteria in plain English, organised by POUR.
+- [VPAT template (PDF)](https://eaa-navigator.com/vpat): A blank Voluntary Product Accessibility Template with a guide to completing it into an ACR.
+- [Guides](https://eaa-navigator.com/guides): Who the EAA applies to, ADA vs EAA, accessibility statements, e-commerce, WordPress, overlays, keyboard access and alt text.
+- [All resources](https://eaa-navigator.com/resources): The full index of free tools, downloads and guides.
+
+## About
+
+- [About EAA Navigator](https://eaa-navigator.com/about): What this hub is and who is behind it.
+- [The Accessibility Brief (newsletter)](https://eaa-navigator.com/subscribe): Plain-English updates when WCAG, the EAA or the ADA move.

@@ -4,7 +4,7 @@ import { useState, type FormEvent } from 'react';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-type Fields = 'name-company-email' | 'email';
+type Fields = 'name-company-email' | 'name-email' | 'email';
 
 // Generalised, email-gated lead form. Adapted from ChecklistForm, but it does
 // NOT trigger a client-side download — the PDF asset may not exist yet. On
@@ -34,16 +34,17 @@ export function LeadGateForm({
   const [status, setStatus] = useState<'idle' | 'loading' | 'done' | 'error'>('idle');
   const [error, setError] = useState('');
 
-  const wantsNameCompany = fields === 'name-company-email';
+  const wantsName = fields === 'name-company-email' || fields === 'name-email';
+  const wantsCompany = fields === 'name-company-email';
 
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    if (wantsNameCompany && !name.trim()) {
+    if (wantsName && !name.trim()) {
       setStatus('error');
       setError('Please add your name.');
       return;
     }
-    if (wantsNameCompany && !company.trim()) {
+    if (wantsCompany && !company.trim()) {
       setStatus('error');
       setError('Please add your company.');
       return;
@@ -61,7 +62,8 @@ export function LeadGateForm({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           slug,
-          ...(wantsNameCompany ? { name: name.trim(), company: company.trim() } : {}),
+          ...(wantsName ? { name: name.trim() } : {}),
+          ...(wantsCompany ? { company: company.trim() } : {}),
           email,
           source
         })
@@ -104,7 +106,7 @@ export function LeadGateForm({
             download
             className="mt-4 inline-flex min-h-[48px] w-full items-center justify-center rounded-md bg-accent px-6 font-body font-semibold text-ink transition-[transform,box-shadow] duration-[var(--duration-base)] ease-[var(--ease-out)] hover:[transform:translateY(-2px)] hover:shadow-[var(--shadow-cta-hover)] active:scale-[0.97]"
           >
-            Download the checklist (PDF)
+            Download the PDF
           </a>
         )}
       </div>
@@ -125,24 +127,25 @@ export function LeadGateForm({
       <p className="text-ink font-medium">{heading}</p>
       <p className="mt-2 text-sm text-muted leading-relaxed">{blurb}</p>
 
-      {wantsNameCompany && (
-        <>
-          <div className="mt-4">
-            <label htmlFor={ids.name} className="block font-body font-medium text-ink text-sm">
-              Name
-            </label>
-            <input
-              id={ids.name}
-              type="text"
-              autoComplete="name"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              placeholder="Your name"
-              className={inputClass}
-            />
-          </div>
+      {wantsName && (
+        <div className="mt-4">
+          <label htmlFor={ids.name} className="block font-body font-medium text-ink text-sm">
+            Name
+          </label>
+          <input
+            id={ids.name}
+            type="text"
+            autoComplete="name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Your name"
+            className={inputClass}
+          />
+        </div>
+      )}
 
+      {wantsCompany && (
           <div className="mt-4">
             <label htmlFor={ids.company} className="block font-body font-medium text-ink text-sm">
               Company
@@ -158,7 +161,6 @@ export function LeadGateForm({
               className={inputClass}
             />
           </div>
-        </>
       )}
 
       <div className="mt-4">

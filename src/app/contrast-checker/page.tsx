@@ -47,13 +47,13 @@ const FAQS: Faq[] = [
 ];
 
 export const metadata: Metadata = {
-  title: 'Color Contrast Checker (WCAG AA & AAA) · EAA Navigator',
+  title: 'Color Contrast Checker (WCAG AA & AAA)',
   description:
     'Free color contrast checker. Enter any two colours and instantly see the WCAG contrast ratio with AA and AAA pass or fail results for normal text, large text and UI elements.',
   alternates: { canonical: '/contrast-checker' },
   openGraph: {
     type: 'website',
-    title: 'Color Contrast Checker (WCAG AA & AAA) · EAA Navigator',
+    title: 'Color Contrast Checker (WCAG AA & AAA)',
     description:
       'Free color contrast checker. Enter two colours and see the WCAG contrast ratio with AA and AAA pass or fail results for normal text, large text and UI elements.',
     url: `${SITE}/contrast-checker`,

@@ -28,9 +28,9 @@ const EN_301_549 =
   'https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf';
 
 export const metadata: Metadata = {
-  title: 'Accessibility compliance deadlines & timeline | EAA Navigator',
+  title: 'Accessibility compliance deadlines & timeline',
   description:
-    'The web accessibility deadlines that matter: the EAA applies from 28 June 2025 (service contracts to 2030), the EU Web Accessibility Directive milestones, and the US DOJ Title II deadlines of 26 April 2027 and 2028. A living timeline of what is past and what is upcoming.',
+    'Web accessibility deadlines that matter: the EAA (28 June 2025), the EU Web Accessibility Directive and the US DOJ Title II dates (26 April 2027/2028).',
   alternates: { canonical: '/deadlines' },
   openGraph: {
     title: 'Accessibility compliance deadlines: EAA, the EU & the US',
@@ -392,6 +392,14 @@ export default function DeadlinesPage() {
               providing a VPAT.
             </p>
           </TLDR>
+          <div className="mt-6">
+            <Callout variant="info" title="WCAG 2.1 or 2.2?">
+              These laws still cite <strong>WCAG 2.1 AA</strong>, but <strong>WCAG 2.2</strong> is the
+              current version and is backwards-compatible — meeting{' '}
+              <Link href="/wcag">WCAG 2.2 AA</Link> also satisfies 2.1 AA, so it is the safe,
+              future-proof target.
+            </Callout>
+          </div>
         </div>
 
         {/* Mini matrix */}

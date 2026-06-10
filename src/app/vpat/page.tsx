@@ -166,9 +166,9 @@ export default function VpatPage() {
                 <LeadGateForm
                   slug="vpat-template"
                   source="vpat-page"
-                  fields="name-company-email"
+                  fields="name-email"
                   heading="Get the VPAT template"
-                  blurb="Tell us where to send it and your download starts straight away. A blank VPAT with the full WCAG 2.2 A and AA report tables, plus a guide to completing it honestly."
+                  blurb="Just your name and email — your download starts straight away. A blank VPAT with the full WCAG 2.2 A and AA report tables, plus a guide to completing it honestly."
                   cta="Get the VPAT template (PDF)"
                   downloadUrl="/downloads/vpat-accessibility-template.pdf"
                 />
@@ -348,7 +348,7 @@ export default function VpatPage() {
 }
 
 export const metadata: Metadata = {
-  title: 'VPAT & Document Accessibility | EAA Navigator',
+  title: 'VPAT & Document Accessibility',
   description:
     'What a VPAT is versus an ACR, the four editions (WCAG, 508, EU, INT), who requests them, how an honest report is produced, and document/PDF accessibility. Get a VPAT template.',
   alternates: { canonical: '/vpat' },

@@ -89,9 +89,9 @@ export default function WcagChecklistPage() {
                 <LeadGateForm
                   slug="wcag-checklist"
                   source="wcag-checklist-page"
-                  fields="name-company-email"
+                  fields="name-email"
                   heading="Get the WCAG 2.2 AA Checklist, free."
-                  blurb="Tell us where to send it and your download starts straight away. One plain-English PDF covering every Level A and AA criterion."
+                  blurb="Just your name and email — your download starts straight away. One plain-English PDF covering every Level A and AA criterion."
                   cta="Get the checklist (PDF)"
                   downloadUrl="/downloads/wcag-22-aa-checklist.pdf"
                 />

@@ -17,7 +17,7 @@ import { webPage } from '@/lib/schema';
 import { GUIDES, SITE, SRC } from '@/lib/guides';
 
 export const metadata: Metadata = {
-  title: 'Accessibility Guides: WCAG, EAA, ADA, Overlays & More | EAA Navigator',
+  title: 'Accessibility Guides: WCAG, EAA, ADA, Overlays & More',
   description:
     'Plain-English web accessibility guides: who the EAA applies to, ADA vs EAA, accessibility statements, e-commerce and WordPress accessibility, overlays, keyboard access and alt text.',
   alternates: { canonical: '/guides' },

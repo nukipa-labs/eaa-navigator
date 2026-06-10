@@ -68,7 +68,7 @@ const FAQS: Faq[] = [
 export const metadata: Metadata = {
   title: 'The European Accessibility Act (EAA), explained',
   description:
-    'A plain-English guide to the European Accessibility Act, Directive (EU) 2019/882: the dates, the covered products and services, the micro-enterprise exemption, how conformance works via EN 301 549 and WCAG, and penalties.',
+    'A plain-English guide to the European Accessibility Act (Directive (EU) 2019/882): the dates, covered products and services, exemptions and how to comply.',
   alternates: { canonical: '/eaa' },
   openGraph: {
     type: 'article',

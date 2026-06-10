@@ -293,6 +293,12 @@ export default function AdaPillarPage() {
               the US reference point. See the <Link href="/deadlines">deadlines page</Link> for how
               these sit alongside the EU dates.
             </p>
+            <Callout variant="info" title="WCAG 2.1 or 2.2? Both, in practice">
+              The laws above still cite <strong>WCAG 2.1 AA</strong>, but <strong>WCAG 2.2</strong> is
+              the current version and is backwards-compatible — it only adds criteria. Meeting{' '}
+              <Link href="/wcag">WCAG 2.2 AA</Link> therefore also satisfies 2.1 AA, so targeting 2.2 is
+              the safe, future-proof choice — which is why our checklist is 2.2.
+            </Callout>
           </RevealOnScroll>
 
           <RevealOnScroll>
