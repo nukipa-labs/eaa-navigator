@@ -1,0 +1,16 @@
+node_modules
+.next
+.turbo
+out
+build
+dist
+.env.local
+.env.*.local
+*.log
+.DS_Store
+tsconfig.tsbuildinfo
+
+# Internal build tooling / docs — not needed for the deployed site
+pdf-build/
+BUILD-CONTEXT.md
+.claude/
